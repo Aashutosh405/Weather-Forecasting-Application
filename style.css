@@ -7,36 +7,40 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 #weather-container {
     background: rgba(255, 255, 255, 0.2);
-    max-width: 350px; /* Reduced max width */
-    padding: 20px; /* Reduced padding */
-    border-radius: 15px; /* Slightly smaller radius */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Slightly smaller shadow */
+    width: 350px; /* Fixed width */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
+    max-width: 95vw; /* Ensures it doesn't overflow on small screens */
+    min-width: 300px; /* Prevents shrinking too small */
 }
 
 h2, label, p {
     color: #fff;
-    margin: 5px 0; /* Reduced margin */
+    margin: 5px 0;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 input {
-    width: calc(100% - 16px); /* Reduced width */
-    padding: 8px; /* Reduced padding */
+    width: calc(100% - 16px);
+    padding: 8px;
     box-sizing: border-box;
-    border-radius: 10px; /* Smaller radius */
+    border-radius: 10px;
     border: 1px solid white;
-    margin-top: 15px; /* Reduced margin */
+    margin-top: 15px;
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
-    font-size: 14px; /* Reduced font size */
+    font-size: 14px;
 }
 
 input:focus {
@@ -47,38 +51,38 @@ input:focus {
 button {
     background: #8b48d7;
     color: white;
-    padding: 10px; /* Reduced padding */
+    padding: 10px;
     border: none;
-    border-radius: 10px; /* Smaller radius */
+    border-radius: 10px;
     cursor: pointer;
-    margin-top: 15px; /* Reduced margin */
-    width: 100px; /* Reduced button width */
-    font-size: 14px; /* Reduced font size */
+    margin-top: 15px;
+    width: 100px;
+    font-size: 14px;
     font-weight: bold;
     transition: background 0.3s, transform 0.2s ease-in-out;
 }
 
 button:hover {
     background: #5c31a5;
-    transform: translateY(-3px); /* Reduced hover effect */
+    transform: translateY(-3px);
 }
 
 #temp-div p {
-    font-size: 48px; /* Reduced font size */
+    font-size: 48px;
     margin-top: -10px;
     color: #fff;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 #weather-info {
-    font-size: 18px; /* Reduced font size */
-    margin-bottom: 15px; /* Reduced margin */
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 #weather-icon {
-    width: 180px; /* Reduced width */
-    height: 180px; /* Reduced height */
-    margin: 0 auto 10px; /* Reduced margin */
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 10px;
     display: none;
     animation: pulse 2s infinite ease-in-out;
 }
@@ -99,7 +103,7 @@ button:hover {
 }
 
 #hourly-forecast {
-    margin-top: 20px; /* Reduced margin */
+    margin-top: 20px;
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
@@ -110,29 +114,29 @@ button:hover {
 
 .hourly-item {
     flex: 0 0 auto;
-    width: 70px; /* Reduced item width */
+    width: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 8px;
     color: white;
-    font-size: 12px; /* Reduced font size */
+    font-size: 12px;
     transition: transform 0.2s ease-in-out;
 }
 
 .hourly-item:hover {
-    transform: scale(1.05); /* Reduced hover scale */
+    transform: scale(1.05);
 }
 
 .hourly-item img {
-    width: 35px; /* Reduced image size */
+    width: 35px;
     height: 35px;
-    margin-bottom: 6px; /* Reduced margin */
+    margin-bottom: 6px;
 }
 
 #hourly-heading {
     color: #fff;
-    margin-top: 15px; /* Reduced margin */
-    font-size: 16px; /* Reduced font size */
+    margin-top: 15px;
+    font-size: 16px;
     font-weight: 600;
 }
