@@ -4,38 +4,39 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 130vh;
+    height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 #weather-container {
     background: rgba(255, 255, 255, 0.2);
-    max-width: 400px;
-    padding: 30px;
+    max-width: 500px; /* Medium width */
+    padding: 25px; /* Medium padding */
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
 }
 
 h2, label, p {
     color: #fff;
-    margin: 10px 0;
+    margin: 8px 0; /* Medium margin */
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 input {
-    width: calc(100% - 20px);
+    width: calc(100% - 20px); /* Medium input width */
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 12px;
     border: 1px solid white;
-    margin-top: 25px;
+    margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
-    font-size: 16px;
+    font-size: 16px; /* Medium font size */
 }
 
 input:focus {
@@ -48,10 +49,10 @@ button {
     color: white;
     padding: 12px;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     cursor: pointer;
-    margin-top: 25px;
-    width: 120px;
+    margin-top: 20px; /* Medium margin */
+    width: 130px; /* Medium button size */
     font-size: 16px;
     font-weight: bold;
     transition: background 0.3s, transform 0.2s ease-in-out;
@@ -59,25 +60,25 @@ button {
 
 button:hover {
     background: #5c31a5;
-    transform: translateY(-5px);
+    transform: translateY(-4px); /* Slight hover effect */
 }
 
 #temp-div p {
-    font-size: 64px;
-    margin-top: -20px;
+    font-size: 52px; /* Medium font size */
+    margin-top: -10px;
     color: #fff;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 #weather-info {
-    font-size: 22px;
-    margin-bottom: 20px;
+    font-size: 20px; /* Medium font size */
+    margin-bottom: 15px;
 }
 
 #weather-icon {
-    width: 220px;
-    height: 220px;
-    margin: 0 auto 15px; 
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
     display: none;
     animation: pulse 2s infinite ease-in-out;
 }
@@ -97,26 +98,25 @@ button:hover {
     }
 }
 
-
 #hourly-forecast {
-    margin-top: 40px;
+    margin-top: 30px;
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hourly-item {
     flex: 0 0 auto;
-    width: 80px;
+    width: 80px; /* Medium item width */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 10px;
     color: white;
-    font-size: 14px;
+    font-size: 16px; /* Medium font size */
     transition: transform 0.2s ease-in-out;
 }
 
@@ -125,15 +125,14 @@ button:hover {
 }
 
 .hourly-item img {
-    width: 40px;
-    height: 40px;
+    width: 45px; /* Medium icon size */
+    height: 45px;
     margin-bottom: 8px;
 }
 
 #hourly-heading {
     color: #fff;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 18px; /* Medium font size */
     font-weight: 600;
 }
-
