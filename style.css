@@ -11,10 +11,10 @@ body {
 
 #weather-container {
     background: rgba(255, 255, 255, 0.2);
-    max-width: 500px; /* Medium width */
-    padding: 25px; /* Medium padding */
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    max-width: 350px; /* Reduced max width */
+    padding: 20px; /* Reduced padding */
+    border-radius: 15px; /* Slightly smaller radius */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Slightly smaller shadow */
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
@@ -22,21 +22,21 @@ body {
 
 h2, label, p {
     color: #fff;
-    margin: 8px 0; /* Medium margin */
+    margin: 5px 0; /* Reduced margin */
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 input {
-    width: calc(100% - 20px); /* Medium input width */
-    padding: 10px;
+    width: calc(100% - 16px); /* Reduced width */
+    padding: 8px; /* Reduced padding */
     box-sizing: border-box;
-    border-radius: 12px;
+    border-radius: 10px; /* Smaller radius */
     border: 1px solid white;
-    margin-top: 20px;
+    margin-top: 15px; /* Reduced margin */
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
-    font-size: 16px; /* Medium font size */
+    font-size: 14px; /* Reduced font size */
 }
 
 input:focus {
@@ -47,38 +47,38 @@ input:focus {
 button {
     background: #8b48d7;
     color: white;
-    padding: 12px;
+    padding: 10px; /* Reduced padding */
     border: none;
-    border-radius: 12px;
+    border-radius: 10px; /* Smaller radius */
     cursor: pointer;
-    margin-top: 20px; /* Medium margin */
-    width: 130px; /* Medium button size */
-    font-size: 16px;
+    margin-top: 15px; /* Reduced margin */
+    width: 100px; /* Reduced button width */
+    font-size: 14px; /* Reduced font size */
     font-weight: bold;
     transition: background 0.3s, transform 0.2s ease-in-out;
 }
 
 button:hover {
     background: #5c31a5;
-    transform: translateY(-4px); /* Slight hover effect */
+    transform: translateY(-3px); /* Reduced hover effect */
 }
 
 #temp-div p {
-    font-size: 52px; /* Medium font size */
+    font-size: 48px; /* Reduced font size */
     margin-top: -10px;
     color: #fff;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 #weather-info {
-    font-size: 20px; /* Medium font size */
-    margin-bottom: 15px;
+    font-size: 18px; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin */
 }
 
 #weather-icon {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 15px;
+    width: 180px; /* Reduced width */
+    height: 180px; /* Reduced height */
+    margin: 0 auto 10px; /* Reduced margin */
     display: none;
     animation: pulse 2s infinite ease-in-out;
 }
@@ -99,7 +99,7 @@ button:hover {
 }
 
 #hourly-forecast {
-    margin-top: 30px;
+    margin-top: 20px; /* Reduced margin */
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
@@ -110,29 +110,29 @@ button:hover {
 
 .hourly-item {
     flex: 0 0 auto;
-    width: 80px; /* Medium item width */
+    width: 70px; /* Reduced item width */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 8px;
     color: white;
-    font-size: 16px; /* Medium font size */
+    font-size: 12px; /* Reduced font size */
     transition: transform 0.2s ease-in-out;
 }
 
 .hourly-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05); /* Reduced hover scale */
 }
 
 .hourly-item img {
-    width: 45px; /* Medium icon size */
-    height: 45px;
-    margin-bottom: 8px;
+    width: 35px; /* Reduced image size */
+    height: 35px;
+    margin-bottom: 6px; /* Reduced margin */
 }
 
 #hourly-heading {
     color: #fff;
-    margin-top: 20px;
-    font-size: 18px; /* Medium font size */
+    margin-top: 15px; /* Reduced margin */
+    font-size: 16px; /* Reduced font size */
     font-weight: 600;
 }
