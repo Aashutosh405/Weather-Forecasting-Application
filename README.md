@@ -20,7 +20,6 @@ A weather application that allows users to search for current weather and a 24-h
   - OpenWeather API to fetch real-time weather data.
 
 ## Screenshots
-![Weather App Screenshot](Web Application Interface.jpg)
 ![Weather App Screenshot](image.png)
 
 ## Future Improvements
